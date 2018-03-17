@@ -1,0 +1,16 @@
+>>> sum((lr_full.predict(X) == rtrain.Occupancy) & (lr_full.predict(X) == 1))
+1724
+
+>>> print('True Negatives: ', end ='')
+True Negatives: >>> print(sum((lr_full.predict(X) == rtrain.Occupancy) & (lr_full.predict(X) == 0)))
+6324
+>>> 
+
+>>> print('False Positives: ', end ='')
+False Positives: >>> print(sum((lr_full.predict(X) != rtrain.Occupancy) & (lr_full.predict(X) == 1)))
+90
+
+>>> print('False Negatives: ', end ='')
+False Negatives: >>> print(sum((lr_full.predict(X) != rtrain.Occupancy) & (lr_full.predict(X) == 0)))
+5
+
