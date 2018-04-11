@@ -1,0 +1,42 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+r = pd.read_csv('train.tsv', sep = '\t', 
+				names= ['price', 'isNew', 'rooms', 'floor', 'location', 'sqrMeters'])
+r.shape
+(1674, 6)
+r.info - pokazuje wszystko co się znajduje w pliku train.tsv
+
+r.columns
+ Index(['price', 'isNew', 'rooms', 'floor', 'location', 'sqrMeters'], dtype='object')
+	
+	
+
+In [9]: r.describe()
+Out[9]: 
+              price        rooms        floor    sqrMeters
+count  1.674000e+03  1674.000000  1674.000000  1674.000000
+mean   3.672813e+05     2.684588     2.989247    57.877539
+std    1.639803e+05     0.775238     2.950053    23.091438
+min    1.000000e+05     2.000000     0.000000    12.000000
+25%    2.800625e+05     2.000000     1.000000    44.000000
+50%    3.301275e+05     3.000000     2.000000    54.000000
+75%    3.990000e+05     3.000000     4.000000    71.000000
+max    2.700000e+06     7.000000    16.000000   196.000000
+
+In [12]: r['price'].head()
+Out[12]: 
+0    476118.0
+1    459531.0
+2    411557.0
+3    496416.0
+4    406032.0
+Name: price, dtype: float64
+
+In [13]: r.price.min()
+Out[13]: 100000.0
+
+	
+	
+	
