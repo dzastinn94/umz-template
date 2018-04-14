@@ -10,10 +10,10 @@ precision:
 
 
 Bayes
-accuracy:
-sensivity:
-specifity
-precision:
+accuracy:	 0.83570581257414
+sensivity:	 0.684395090590298
+specifity:	 0.31560490940970193
+precision:	 0.9881856540084388
 
 
 
