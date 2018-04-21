@@ -12,8 +12,6 @@ import os
 
  os.chdir('/home/students/s407531/Desktop/uczeniem/umz-template/zajecia1/zadanie4/train')
 
-report=pd.read_csv('in.tsv', sep='\t', names=['price', 'mileage', 'year', 'brand', 'engingeType', 'engineCapacity'])
-
  r=pd.read_csv('in.tsv', sep='\t', names=['price', 'mileage', 'year', 'brand', 'engingeType', 'engineCapacity'])
 
  reg = linear_model.LinearRegression()
