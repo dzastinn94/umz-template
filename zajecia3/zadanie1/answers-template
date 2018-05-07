@@ -38,9 +38,10 @@ precision:
 
 
 Bayes + laplac:
-alfa:
-beta:
-accuracy:
-sensivity:
-specifity
-precision:
+alfa: 0.1
+beta: 0.5
+accuracy:	 0.8674377224199288
+sensivity:	 0.7403055229142186
+specifity:	 0.2596944770857814
+precision:	 0.9960474308300395
+f-measure:	 0.8493427704752274
