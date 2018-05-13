@@ -40,10 +40,12 @@ f-measure:	 0.8188380886902715
 
 
 Bayes + stemmer snowball:
-accuracy:     0.8600237247924420
-sensivity:    0.735191637630326
-specifity:    0.9903030303030902
-precision:    0.9875195007800468
+accuracy:	 0.8425266903914591
+sensivity:	 0.7072330654420207
+specifity:	 0.2927669345579793
+precision:	 0.9832402234636871
+f-measure:	 0.8227045075125209
+
 
 
 Bayes + laplac:
