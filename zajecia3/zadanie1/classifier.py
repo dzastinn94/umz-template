@@ -131,6 +131,25 @@ class Bayes(classifier):
                 p = p * (1 - word_list[i])
         return p
 
+    @classmethod
+    def most_common_words(cls, data_set):
+        cls.ham_words_dict = dict()
+        cls.spam_words_dict = dict()
+        cls.set_apriori(data_set)
+        for email in data_set:
+            if email.is_spam:
+                cls.add_tokens_to_dict(email, cls.ham_words_dict)
+            else:
+                cls.add_tokens_to_dict(email, cls.spam_words_dict)
+            cls.print_progress(data_set)
+        words_ham = sorted(cls.ham_words_dict.items(), key=lambda x: x[1], reverse=True)
+        words_spam = sorted(cls.spam_words_dict.items(), key=lambda x: x[1], reverse=True)
+        print('\n', ' najczesciej wystepujace slowa w ham:')
+        for words in words_ham[:10]:
+            print(str(words[0]) + ' -- ' + str(words[1]))
+        print('\n', ' najczesciej wystepujace slowa w spam:')
+        for words in words_spam[:10]:
+            print(str(words[0]) + ' -- ' + str(words[1]))
 
 class Bayes_stemmed(Bayes):
     @classmethod
