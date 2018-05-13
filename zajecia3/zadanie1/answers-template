@@ -30,10 +30,13 @@ precision:   0.9840383050006872
 
 
 Bayes + stemmer porter:
-accuracy:   0.8481613285883749
-sensivity:  0.709101725163852
-specifity:  0.9863985807214666
-precision:  0.9810699588477652
+
+accuracy:	 0.8437129300118624
+sensivity:	 0.6985337243401759
+specifity:	 0.30146627565982403
+precision:	 0.989202657807309
+f-measure:	 0.8188380886902715
+
 
 Bayes + stemmer snowball:
 accuracy:     0.8600237247924420
