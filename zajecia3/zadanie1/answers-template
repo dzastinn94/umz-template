@@ -23,10 +23,11 @@ precision:	 0.9881856540084388
 
 
 Bayes + stemmer lancester:
-accuracy:    0.8558718861209964
-sensivity:   0.7257210123602320
-specifity:   0.9880454273759713
-precision:   0.9840383050006872
+accuracy:	 0.8570581257413997
+sensivity:	 0.727803738317757
+specifity:	 0.272196261682243
+precision:	 0.9873217115689382
+f-measure:	 0.8379287155346336
 
 
 Bayes + stemmer porter:
