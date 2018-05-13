@@ -8,10 +8,12 @@ to,the,and,a,you,for,of,your,is,in
 
 
 zero rule:
-accuracy:   0.5050415183867141
-sensivity:  1.0
-specifity:  0.0
-precision:  0.5050415183867141
+accuracy:	 0.5065243179122183
+sensivity:	 1.0
+specifity:	 0.0
+precision:	 0.5065243179122183
+f-measure:	 0.6724409448818898
+
 
 
 Bayes
