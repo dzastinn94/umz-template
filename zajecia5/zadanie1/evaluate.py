@@ -5,7 +5,6 @@ import os
 import pandas as pd
 from keras import optimizers
 
-
 r = pd.read_csv(os.path.join("train", "train.tsv"), header=None, names=[
                 "Occupancy", "date", "Temperature", "Humidity", "Light", "CO2", "HumidityRatio"], sep='\t')
 X_train = pd.DataFrame(
@@ -22,7 +21,7 @@ def create_baseline():
     sgd = optimizers.SGD(lr=0.1)
     # kompilacja modelu
     model.compile(loss='binary_crossentropy',
-                  optimizer=sgd, metrics=['accuracy'])
+                  optimizer='adam', metrics=['accuracy'])
 
     # rysowanie architektury sieci, jeżeli ktoś ma zainstalowane odpowiednie biblioteki
     # from keras.utils import plot_model
